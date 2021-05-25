@@ -13,7 +13,7 @@ private:
      Vector<SIZE> bokiwzor[SIZE2];
   Vector<SIZE> boki[SIZE2];
   double katorient;
-  Vector<SIZE> przesuniecie;
+   Vector<SIZE> polozenie;
   Vector<SIZE> przesunieciewzgkorpusu;
 
 public:

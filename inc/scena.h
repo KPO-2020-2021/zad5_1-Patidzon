@@ -3,12 +3,16 @@
 #include <iostream>
 #include <cmath>
 #include <size.h>
-
+#include "brylawzorcowa.h"
+#include "vector.h"
+#include "prostopadloscian.h"
+#include "graniastoslup.h"
+#include "dron.h"
 
 class scena
 {
 private:
-    /* data */
+    dron drony[2];
 public:
     scena(/* args */);
     ~scena();

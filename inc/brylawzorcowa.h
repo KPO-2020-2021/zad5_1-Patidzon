@@ -6,8 +6,9 @@
 #include "vector.h"
 class brylawzorcowa
 {
-private:
-   char nazwapliku;
+protected:
+   const char* nazwaplikuszescian="../bryly_wzorcowe/szescian.dat";
+  const char* nazwaplikugraniastoslup="../bryly_wzorcowe/graniastoslup6.dat";
 public:
     brylawzorcowa(/* args */);
     ~brylawzorcowa();
