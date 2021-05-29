@@ -519,6 +519,8 @@ bool AnimacjaLotuDrona(PzG::LaczeDoGNUPlota &Lacze)
 
 int main()
 {
+  /*const char* nazwaplikuszescian="../bryly_wzorcowe/szescian.dat";
+  std::cout<<nazwaplikuszescian;*/
   PzG::LaczeDoGNUPlota  Lacze;
 
   Lacze.DodajNazwePliku("../bryly_wzorcowe/plaszczyzna.dat");

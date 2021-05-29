@@ -7,6 +7,9 @@
 #include "vector.h"
 #include "prostopadloscian.h"
 #include "graniastoslup.h"
+#include <cstdlib>
+#include "matrix.h"
+#include <fstream>
 class dron
 {
 private:
@@ -17,6 +20,10 @@ private:
 public:
     dron(/* args */);
     ~dron();
+  void  tworzdrona();
+  void  przemiescdron(Vector<SIZE> przesuniecie);
+  void  obrocdron(double kat);
+  void  lotzwiadowczy();
 };
 
 dron::dron(/* args */)

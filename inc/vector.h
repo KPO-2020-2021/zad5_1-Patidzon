@@ -33,6 +33,7 @@ public:
     Vector< SIZE> operator - (const Vector< SIZE> &v);
 
     Vector< SIZE> operator * (const double &tmp);
+     Vector< SIZE> operator * (const Vector<SIZE> &v);
 
     Vector< SIZE> operator / (const double &tmp);
     bool operator == (Vector< SIZE> tmp)const;
@@ -265,3 +266,23 @@ if ((std::abs(size[0]- tmp.size[0]) <= MINDIF) && (std::abs(size[1]- tmp.size[1]
     return false;
   }
   }
+
+
+  /*!
+*****************************************************************************
+ | \brief Realizuje dodawanie dwoch wektorow.                                       |
+ |  Argumenty:                                                                |
+ |      this - pierwszy skladnik dodawania,                                   |
+ |      v - drugi skladnik dodawania.                                         |
+ |  Zwraca:                                                                   |
+ |      Sume dwoch skladnikow przekazanych jako wskaznik                      |
+ |      na parametr.                                                          |
+ */
+template <int SIZE>
+Vector< SIZE> Vector< SIZE>::operator * (const Vector< SIZE> &v) {
+    Vector result;
+    for (int i = 0; i < SIZE; ++i) {
+        result[i] = size[i] *= v[i];
+    }
+    return result;
+}
