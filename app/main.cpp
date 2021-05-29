@@ -23,6 +23,8 @@
 #include <cassert>
 #include <unistd.h>
 #include "lacze_do_gnuplota.hh"
+#include "size.h"
+#include "dron.h"
 
 using namespace std;
 
@@ -46,7 +48,7 @@ using namespace std;
 
 
 
-
+/*
 
 /*!
  * \brief Przelicza wartość kąta ze stopni na radiany.
@@ -322,12 +324,12 @@ bool TworzKorpus(const char*  NazwPliku_KorpusuWDronie,
 #define PLIK_ROBOCZY__DRON1_ROTOR3  "../dat/PlikRoboczy_Dron1_Rotor3.dat"
 #define PLIK_ROBOCZY__DRON1_ROTOR4  "../dat/PlikRoboczy_Dron1_Rotor4.dat"
 
-#define PLIK_WLASCIWY__DRON1_KORPUS  "../dat/PlikWlasciwy_Dron1_Korpus.dat"
+/*#define PLIK_WLASCIWY__DRON1_KORPUS  "../dat/PlikWlasciwy_Dron1_Korpus.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR1  "../dat/PlikWlasciwy_Dron1_Rotor1.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR2  "../dat/PlikWlasciwy_Dron1_Rotor2.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR3  "../dat/PlikWlasciwy_Dron1_Rotor3.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR4  "../dat/PlikWlasciwy_Dron1_Rotor4.dat"
-
+*/
 
 /*!
  * \brief Tworzy pliku pozwalające na wizualizację drona.
@@ -539,8 +541,10 @@ int main()
 
 
   Lacze.UstawRotacjeXZ(64,65); // Tutaj ustawiany jest widok
+  dron dron1;
+  dron1.tworzdrona();
 
-  if (!PrzemiescDrona(0,20,20,0)) return 0;
+  /*if (!PrzemiescDrona(0,20,20,0)) return 0;
 
 
   Lacze.Rysuj();        // Teraz powinno pojawic sie okienko gnuplota
@@ -565,5 +569,5 @@ int main()
   
   cout << "Nacisnij ENTER, aby zakonczyc ... " << flush;
   cin.ignore(10000,'\n');
-  
+  */
 }

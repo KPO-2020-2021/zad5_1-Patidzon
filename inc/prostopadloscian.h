@@ -8,6 +8,10 @@
 #include "vector.h"
 #include "matrix.h"
 #include <fstream>
+
+
+
+ 
 class prostopadloscian: public brylawzorcowa
 
 {
