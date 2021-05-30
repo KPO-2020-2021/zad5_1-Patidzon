@@ -9,7 +9,7 @@
 #include "matrix.h"
 // This is all that is needed to compile a test-runner executable.
 // More tests can be added here, or in a new tests/*.cpp file.
-TEST_CASE("mnozenie wektorow") {
+/*TEST_CASE("mnozenie wektorow") {
     double argumentsV1[] = {2.0, 3.0, 1.0};
     double argumentsV2[] = {2.0, 4.0 , 1.0};
     double argumentsV3[] = {4.0, 12.0 ,1.0};
@@ -18,4 +18,4 @@ TEST_CASE("mnozenie wektorow") {
    Vector<SIZE> y=Vector<SIZE>(argumentsV3);
    Vector<SIZE> a=x*t;
     CHECK(a == y);
-}
+}*/

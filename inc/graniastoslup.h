@@ -13,8 +13,9 @@ class graniastoslup: public brylawzorcowa
 private:
   Vector<SIZE> wierzcholkiwzor[SIZE1];
   Vector<SIZE> wierzcholki[SIZE1];
-  double katorient;
- Vector<SIZE> polozenie;
+  double katorient=0;
+ Vector<SIZE> polozenie=V1;
+ Vector<SIZE> polozeniepoczatkowe;
   Vector<SIZE> przesunieciewzgkorpusu;
  Vector<SIZE> skala;
 
@@ -25,6 +26,7 @@ public:
     void Przesunwierzcholki();
     void Obrocwierzcholki();
     void zapiszwsp (const char* nazwaplikuzapisu);
+    void ustawpolozeniepoczatkowe(Vector<SIZE> polozeniepoczatkowe1);
     void przekazparametryprzesuniecia(Vector<SIZE> polozenie1, double kat );
     void przekazparametrykonstrukcji( Vector<SIZE> przesunieciewzgkorpusu1, Vector<SIZE> skala1);
 };
@@ -52,7 +54,7 @@ for ( i = 0; i < SIZE1; i++)
      {
        
        plik>>wierzcholkiwzor[i];
-       
+       //std::cout<<wierzcholkiwzor[i];
        
      }
   
@@ -105,9 +107,9 @@ plik.close();
 void graniastoslup::Przesunwierzcholki(){
 for ( int i = 0; i < SIZE1; i++)
      {
-       
-       wierzcholki[i]=wierzcholkiwzor[i]*skala+przesunieciewzgkorpusu+polozenie;
-       
+       //std::cout<<wierzcholkiwzor[i]<<std::endl<<skala<<std::endl<<przesunieciewzgkorpusu<<std::endl<<polozenie<<std::endl<<polozeniepoczatkowe<<std::endl;
+       wierzcholki[i]=wierzcholkiwzor[i]*skala+przesunieciewzgkorpusu+polozenie+polozeniepoczatkowe;
+      // std::cout<<wierzcholki[i]<<std::endl;
        
      }
 
@@ -126,8 +128,8 @@ Matrix<SIZE> macierz=Matrix<SIZE>('z',katorient);
 
 for ( int i = 0; i < SIZE1; i++)
      {
-       
-       wierzcholki[i]=macierz*(wierzcholkiwzor[i]*skala)+przesunieciewzgkorpusu+polozenie;
+       //std::cout<<wierzcholkiwzor[i]<<std::endl<<skala<<std::endl<<przesunieciewzgkorpusu<<std::endl<<polozenie<<std::endl<<polozeniepoczatkowe<<std::endl<<katorient<<std::endl;
+       wierzcholki[i]=macierz*(wierzcholkiwzor[i]*skala+przesunieciewzgkorpusu)+polozenie+polozeniepoczatkowe;
        
        
      }
@@ -136,3 +138,23 @@ for ( int i = 0; i < SIZE1; i++)
 
 }
 
+void graniastoslup::przekazparametrykonstrukcji(Vector<SIZE> przesunieciewzgkorpusu1, Vector<SIZE> skala1){
+przesunieciewzgkorpusu=przesunieciewzgkorpusu1;
+skala=skala1;
+
+
+
+}
+void graniastoslup::przekazparametryprzesuniecia(Vector<SIZE> polozenie1, double kat ){
+polozenie=polozenie1;
+katorient=kat;
+
+
+}
+
+void graniastoslup::ustawpolozeniepoczatkowe(Vector<SIZE> polozeniepoczatkowe1){
+
+polozeniepoczatkowe=polozeniepoczatkowe1;
+
+
+}

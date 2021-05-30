@@ -257,7 +257,7 @@ return wynik;
  |  Argumenty:                                                                |
  |      tmp - wektor.                                                         |
  */
-template <int SIZE>
+/*template <int SIZE>
   bool Vector< SIZE>::operator == (Vector< SIZE> tmp)const{
 if ((std::abs(size[0]- tmp.size[0]) <= MINDIF) && (std::abs(size[1]- tmp.size[1]) <= MINDIF)){
     return true;
@@ -266,7 +266,7 @@ if ((std::abs(size[0]- tmp.size[0]) <= MINDIF) && (std::abs(size[1]- tmp.size[1]
     return false;
   }
   }
-
+*/
 
   /*!
 *****************************************************************************

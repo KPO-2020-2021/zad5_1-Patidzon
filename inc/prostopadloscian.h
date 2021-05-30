@@ -18,8 +18,9 @@ class prostopadloscian: public brylawzorcowa
 private:
      Vector<SIZE> wierzcholkiwzor[SIZE2];
   Vector<SIZE> wierzcholki[SIZE2];
-  double katorient;
-   Vector<SIZE> polozenie;
+  double katorient=0;
+   Vector<SIZE> polozenie=V1;
+    Vector<SIZE> polozeniepoczatkowe;
   Vector<SIZE> przesunieciewzgkorpusu;
   Vector<SIZE> skala;
 public:
@@ -28,9 +29,10 @@ public:
     void  zaladujwspwzor();
     void Przesunwierzcholki();
     void Obrocwierzcholki();
+    void ustawpolozeniepoczatkowe(Vector<SIZE> polozeniepoczatkowe1);
     void zapiszwsp (const char* nazwaplikuzapisu);
     void przekazparametryprzesuniecia(Vector<SIZE> polozenie1, double kat );
-    void przekazparametrykonstrukcji( Vector<SIZE> przesunieciewzgkorpusu1, Vector<SIZE> skala1);
+    void przekazparametrykonstrukcji(  Vector<SIZE> skala1);
 };
 
 prostopadloscian::prostopadloscian(/* args */)
@@ -112,7 +114,7 @@ void prostopadloscian::Przesunwierzcholki(){
 for ( int i = 0; i < SIZE2; i++)
      {
        
-       wierzcholki[i]=wierzcholkiwzor[i]*skala+przesunieciewzgkorpusu+polozenie;
+       wierzcholki[i]=wierzcholkiwzor[i]*skala+polozenie+polozeniepoczatkowe;
        
        
      }
@@ -133,11 +135,34 @@ Matrix<SIZE> macierz=Matrix<SIZE>('z',katorient);
 for ( int i = 0; i < SIZE2; i++)
      {
        
-       wierzcholki[i]=macierz*(wierzcholkiwzor[i]*skala)+przesunieciewzgkorpusu+polozenie;
+       wierzcholki[i]=macierz*(wierzcholkiwzor[i]*skala)+polozenie+polozeniepoczatkowe;
        
        
      }
 
+
+
+}
+
+
+
+void prostopadloscian::przekazparametrykonstrukcji( Vector<SIZE> skala1){
+
+skala=skala1;
+
+
+
+}
+void prostopadloscian::przekazparametryprzesuniecia(Vector<SIZE> polozenie1, double kat ){
+polozenie=polozenie1;
+katorient=kat;
+
+
+}
+
+void prostopadloscian::ustawpolozeniepoczatkowe(Vector<SIZE> polozeniepoczatkowe1){
+
+polozeniepoczatkowe=polozeniepoczatkowe1;
 
 
 }

@@ -14,6 +14,7 @@ class scena
 private:
     dron drony[2];
 public:
+void wybierzdrona(int nrdrona);
     scena(/* args */);
     ~scena();
 };

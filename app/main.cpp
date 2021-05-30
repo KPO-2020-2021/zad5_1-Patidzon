@@ -25,6 +25,13 @@
 #include "lacze_do_gnuplota.hh"
 #include "size.h"
 #include "dron.h"
+#include "brylawzorcowa.h"
+#include "vector.h"
+#include "prostopadloscian.h"
+#include "graniastoslup.h"
+#include "scena.h"
+#include "matrix.h"
+#include <cstdlib>
 
 using namespace std;
 
@@ -48,7 +55,7 @@ using namespace std;
 
 
 
-/*
+
 
 /*!
  * \brief Przelicza wartość kąta ze stopni na radiany.
@@ -520,10 +527,11 @@ bool AnimacjaLotuDrona(PzG::LaczeDoGNUPlota &Lacze)
 
 
 int main()
-{
+{  char z='a';
   /*const char* nazwaplikuszescian="../bryly_wzorcowe/szescian.dat";
   std::cout<<nazwaplikuszescian;*/
   PzG::LaczeDoGNUPlota  Lacze;
+  
 
   Lacze.DodajNazwePliku("../bryly_wzorcowe/plaszczyzna.dat");
   Lacze.DodajNazwePliku(PLIK_WLASCIWY__DRON1_KORPUS);
@@ -540,10 +548,47 @@ int main()
   Lacze.UstawZakresZ(0, 120);
 
 
-  Lacze.UstawRotacjeXZ(64,65); // Tutaj ustawiany jest widok
+ /* Lacze.UstawRotacjeXZ(64,65);*/ // Tutaj ustawiany jest widok
+  scena scena1;
   dron dron1;
   dron1.tworzdrona();
+  Lacze.Rysuj();
+  std::cin.ignore(10000,'\n');
+  dron1.animacjalotu( Lacze);
+   dron1.animacjalotu( Lacze);
+while (z!='k')
+{std::cout<<""<<std::endl
+<<"l lec dronem na wskazana odleglosc"<<std::endl
+<<"d wybierz drona"<<std::endl
+<<"z lot zwiadowczy"<<std::endl
+<<"w wypisz wspolrzedne"<<std::endl
+<<"k koniec"<<std::endl
+<<"aktywny dron to "<<std::endl;
+  std::cin>>z;
+  switch (z)
+  { case 'l':
+  scena
+  
+  default:
+  if (z!='k')
+  {
+    std::cout<<"nie poprawna opcja"<<std::endl;
+  }
+  
 
+    break;
+  }
+}
+
+
+
+  /*dron1.przesundron();
+   Lacze.Rysuj();
+  std::cin.ignore(10000,'\n');
+  dron1.ustawparametry(V4,30);
+    dron1.obrocdron();
+   Lacze.Rysuj();
+  std::cin.ignore(10000,'\n');*/
   /*if (!PrzemiescDrona(0,20,20,0)) return 0;
 
 
