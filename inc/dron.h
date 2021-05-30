@@ -32,12 +32,13 @@ public:
   void  tworzdrona();
   void  przemiescdron(/*Vector<SIZE> przesuniecie*/);
  
-  void  lotzwiadowczy();
+  void  lotzwiadowczy(PzG::LaczeDoGNUPlota  Lacze);
   void  ustawparametry(Vector<SIZE> polozenie2, double kat);
   void ustawpolozeniepoczatkowe(Vector<SIZE> polozeniepoczatkowe1);
   void przesundron();
   void obrocdron();
   void animacjalotu(PzG::LaczeDoGNUPlota  Lacze);
+  void DodajTrasePrzelotu(PzG::LaczeDoGNUPlota &Lacze);
 };
 
 dron::dron(/* args */)
@@ -164,7 +165,9 @@ void dron::animacjalotu(PzG::LaczeDoGNUPlota  Lacze){
   int kat=1,katbackup=katorient;
   double dlugosclotu;
   Vector<SIZE> V4=argumentsV10;
+  Vector<SIZE> V6;
   std::cout<<V4<<std::endl;
+   
   while ((kat%5)!=0)
   {
      std::cout<<"podaj kat obrotu drona(wielokrotnosc 5"<<std::endl;
@@ -173,8 +176,8 @@ void dron::animacjalotu(PzG::LaczeDoGNUPlota  Lacze){
   std::cout<<"podaj dlugosc lotu"<<std::endl;
   std::cin>>dlugosclotu;
   
-    std::cout<<polozenie<<std::endl;
-    std::cout<<katorient<<std::endl;
+   /* std::cout<<polozenie<<std::endl;
+    std::cout<<katorient<<std::endl;*/
   //-------------------------------------
   // Wznoszenie ...
   //
@@ -189,22 +192,40 @@ void dron::animacjalotu(PzG::LaczeDoGNUPlota  Lacze){
     Lacze.Rysuj();
 
   }
-  
-    // cout << "Zmiana orientacji ... " << endl;
-  for (int i=0; i <= kat; i+= 5) {
+  if (kat>=0)
+  {
+      for (int i=0; i <= kat; i+= 5) {
     ustawparametry(V4,katbackup+i);
    obrocdron();
     usleep(100000);
     Lacze.Rysuj();
   }
+  }
+  else
+  {
+         std::cout << "kat ujemny ... " << std::endl;
+  for (int i=0; i >= kat; i-= 5) {
+    ustawparametry(V4,katbackup+i);
+   obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+  }
+  }
+  
+
+
 // ustawpolozeniepoczatkowe(V4);
+  Matrix<SIZE> macierz2=Matrix<SIZE>('z',katorient);
+    V6=macierz2*V5;
   for (int i=0; i <= dlugosclotu; i+= 1) {
-    V4=V4+V5;
+ 
+    V4=V4+V6;
     ustawparametry(V4,katorient);
    obrocdron();
     usleep(100000);
     Lacze.Rysuj();
   }
+
     for (int i = 100; i > 0; i=i-2)
   {
      V4=V4-V3;
@@ -212,10 +233,93 @@ void dron::animacjalotu(PzG::LaczeDoGNUPlota  Lacze){
     obrocdron();
     usleep(100000); // 0.1 ms
     Lacze.Rysuj();
-  }
+  }   std::cout<<katorient<<std::endl;
     std::cout<<polozenie<<std::endl<<polozeniepoczatkowe<<std::endl;
   ustawpolozeniepoczatkowe((polozenie+polozeniepoczatkowe));
   std::cout<<katorient<<std::endl;
   std::cout<<polozeniepoczatkowe;
 
+}
+void dron::lotzwiadowczy(PzG::LaczeDoGNUPlota  Lacze){
+  Vector<SIZE> V6;
+    int kat=60,katbackup=katorient;
+  double dlugosclotu=50;
+  Vector<SIZE> V4=argumentsV10;
+  for (int i = 0; i < 100; i=i+2)
+  { 
+     V4=V4+V3;
+    ustawparametry(V4,katbackup);
+  
+    obrocdron();
+    usleep(100000); // 0.1 ms
+    Lacze.Rysuj();
+  }
+      Matrix<SIZE> macierz2=Matrix<SIZE>('z',katorient);
+    V6=macierz2*V5;
+  for (int i=0; i <= dlugosclotu; i+= 1) {
+ 
+    V4=V4+V6;
+    ustawparametry(V4,katorient);
+   obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+  }
+  katbackup=katorient;
+
+  
+    for (int i=0; i <= kat; i+= 5) {
+    ustawparametry(V4,katbackup+i);
+   obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+  }
+   katbackup=katorient;
+   Matrix<SIZE> macierz3=Matrix<SIZE>('z',katorient);
+    V6=macierz3*V5;
+  
+  for (int j = 0; j < 6; j++)
+  {
+      for (int i=0; i <= kat; i+= 5) {
+    ustawparametry(V4,katbackup+i);
+   obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();
+  }
+  V6=macierz3*V6;
+   katbackup=katorient;
+  for (int i=0; i <= dlugosclotu; i+= 1) {
+ 
+    V4=V4+V6;
+    ustawparametry(V4,katorient);
+   obrocdron();
+    usleep(100000);
+    Lacze.Rysuj();}
+  
+
+
+  }
+  
+
+
+
+}
+
+
+void dron::DodajTrasePrzelotu(PzG::LaczeDoGNUPlota &Lacze)
+{
+  ofstream  StrmWy(PLIK_TRASY_PRZELOTU);
+
+  if (!StrmWy.is_open()) {
+    cerr << endl
+	 << " Nie mozna otworzyc do zapisu pliku: " << PLIK_TRASY_PRZELOTU << endl
+	 << endl;
+    exit(0);
+  }
+
+  StrmWy <<polozeniepoczatkowe<< endl
+	 << "20  20  80" << endl
+	 << "150 150 80" << endl
+	 << "150 150  0" << endl;
+  Lacze.DodajNazwePliku(PLIK_TRASY_PRZELOTU);
+ 
 }

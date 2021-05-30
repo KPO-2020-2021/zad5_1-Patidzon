@@ -52,3 +52,5 @@ The `main.cpp` in the folder `tests` is needed. Only there we define `#define DO
 
 The main loop of the program is in the `app` folder.
 
+Wazne informacje:
+Nie zdazylem napisac programu w zadowalajacej wersji(dziala tylko funkcja lotu) dlatego prawdopodobnie oddam go jutro

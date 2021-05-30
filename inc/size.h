@@ -10,6 +10,7 @@ constexpr double MINDIF =0.0000000001;
 #define PLIK_WLASCIWY__DRON1_ROTOR2  "../dat/PlikWlasciwy_Dron1_Rotor2.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR3  "../dat/PlikWlasciwy_Dron1_Rotor3.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR4  "../dat/PlikWlasciwy_Dron1_Rotor4.dat"
+#define PLIK_TRASY_PRZELOTU "../dat/trasa_przelotu.dat"
 /*
 #define TRANSLACJA_ROTOR_LEWY_PRZEDNI   5,4,5
 #define TRANSLACJA_ROTOR_PRAWY_PRZEDNI  5,-4,5
@@ -26,7 +27,7 @@ constexpr double MINDIF =0.0000000001;
          double argumentsV8[] = {0,0,0};
           double argumentsV9[] = {0,0,2};
           double argumentsV10[] = {0,0,0};
-            double argumentsV11[] = {1,1,0};
+            double argumentsV11[] = {1,0,0};
     Vector<SIZE> wek1=argumentsV1;
     Vector<SIZE> wek2=argumentsV2;
     Vector<SIZE> wek3=argumentsV3;

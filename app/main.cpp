@@ -549,26 +549,29 @@ int main()
 
 
  /* Lacze.UstawRotacjeXZ(64,65);*/ // Tutaj ustawiany jest widok
-  scena scena1;
+  //scena scena1;
   dron dron1;
   dron1.tworzdrona();
-  Lacze.Rysuj();
+  /*Lacze.Rysuj();
   std::cin.ignore(10000,'\n');
   dron1.animacjalotu( Lacze);
-   dron1.animacjalotu( Lacze);
+   dron1.animacjalotu( Lacze);*/
 while (z!='k')
 {std::cout<<""<<std::endl
 <<"l lec dronem na wskazana odleglosc"<<std::endl
-<<"d wybierz drona"<<std::endl
+//<<"d wybierz drona"<<std::endl
 <<"z lot zwiadowczy"<<std::endl
-<<"w wypisz wspolrzedne"<<std::endl
-<<"k koniec"<<std::endl
-<<"aktywny dron to "<<std::endl;
+//<<"w wypisz wspolrzedne"<<std::endl
+<<"k koniec"<<std::endl;
+//<<"aktywny dron to "<<std::endl;
   std::cin>>z;
   switch (z)
   { case 'l':
-  scena
-  
+  dron1.animacjalotu(Lacze);
+  break;
+  case 'z':
+  dron1.lotzwiadowczy(Lacze);
+  break;
   default:
   if (z!='k')
   {
