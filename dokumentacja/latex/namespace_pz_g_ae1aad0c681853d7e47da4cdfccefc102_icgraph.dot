@@ -1,0 +1,19 @@
+digraph "PzG::CzyJestPlik"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="PzG::CzyJestPlik",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PzG::LaczeDoGNUPlota\l::DodajNazwePliku",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#aa815ce8ec16e12fc246cf422e562869e",tooltip="Dodaje nazwę pliku."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="dron::DodajTrasePrzelotu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#ae7e9f795ee1e150acb524237cf909662",tooltip="Metoda klasy dron. | | atgumenty: | | kat -kat obrotu podawany przez uzytkownika | | dlugosclotu -dlu..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="dron::animacjalotu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#a4fe83415726ebc798e1ac6b37341ec70",tooltip="Metoda klasy dron. | | animuje przelot drona dla gnuplota |."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PzG::LaczeDoGNUPlota\l::DodajNazwePliku_PunktyRoznej\lWielkosci",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a963eeeba41fea78ad1ad107baf8d4b36",tooltip="Dodaje nazwę pliku."];
+}

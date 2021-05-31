@@ -1,0 +1,58 @@
+digraph "dron::animacjalotu"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dron::animacjalotu",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Metoda klasy dron. | | animuje przelot drona dla gnuplota |."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dron::DodajTrasePrzelotu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#ae7e9f795ee1e150acb524237cf909662",tooltip="Metoda klasy dron. | | atgumenty: | | kat -kat obrotu podawany przez uzytkownika | | dlugosclotu -dlu..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PzG::LaczeDoGNUPlota\l::DodajNazwePliku",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#aa815ce8ec16e12fc246cf422e562869e",tooltip="Dodaje nazwę pliku."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PzG::CzyJestPlik",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_pz_g.html#ae1aad0c681853d7e47da4cdfccefc102",tooltip="Funkcja pomocnicza, sprawdza czy plik o podanej nazwie jest na dysku."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dron::obrocdron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#aebf10ce4ba25127733c1cafee667c247",tooltip="Metoda klasy dron. | | przesuwa i obraca drona do nowych wspolrzednych drona |."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="prostopadloscian::Obrocwierzcholki",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a5c80e7641c9c23fc34ce5e4d94b94f8f",tooltip="Metoda klasy prostopadloscian. | | Argumenty: brak | | | oblicza wspolrzedne wierzcholkow prostopadlo..."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="graniastoslup::Obrocwierzcholki",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#a0a15b9534445844744af98090736c215",tooltip="Metoda klasy graniastoslup. | | Argumenty: brak | | | oblicza wspolrzedne wierzcholkow graniastoslupa..."];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="graniastoslup::przekazparametryprzesuniecia",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#a8f396b7e3ad37585d4a4eb96903155eb",tooltip="Metoda klasy graniastoslup. | | Argumenty:   | polozenie1 aktualne przesuniecie od polozenia poczatko..."];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="prostopadloscian::przekazparametryprzesuniecia",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a64dbcbe94dccac1e633fa0ecb8ce8519",tooltip="Metoda klasy prostopadloscian. | | Argumenty:   | polozenie1 aktualne przesuniecie od polozenia pocza..."];
+  Node5 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="prostopadloscian::zaladujwspwzor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a2ff73ea0f6327e42d8dc270d0aeca4c6",tooltip="Metoda klasy prostopadloscian. | | Argumenty: | | Brak argumentow. | | Zwraca: | | tabele wypelnione ..."];
+  Node5 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="graniastoslup::zaladujwspwzor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#ac7adc5dc81767fda1305fb682d689975",tooltip="Metoda klasy graniastoslup. | | Argumenty: | | Brak argumentow. | | Zwraca: | | Macierz wypelnione wa..."];
+  Node5 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="graniastoslup::zapiszwsp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#aa82f5df4772ddc60865c16bebb6ab27f",tooltip="Metoda klasy graniastoslup. | | Argumenty: | | nazwaplikuzapisu-nazwa pliku do ktorej zostana zapisan..."];
+  Node5 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="prostopadloscian::zapiszwsp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a9b0575cdcfc7129fe198d0989a70c38f",tooltip="Metoda klasy prostopadloscian. | | Argumenty: | | nazwaplikuzapisu-nazwa pliku do ktorej zostana zapi..."];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="PzG::LaczeDoGNUPlota\l::Rysuj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a065f5b8402737cc62b0ad4f66d028335",tooltip="Generuje polecenie rysowania i przesyła je do gnuplota."];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="PzG::DopiszRysowanieZPlikow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_pz_g.html#aa010184f31b26bb561b42f22438b821e",tooltip="Funkcja pomocnicza, dopisuje do polecenia wpisy związane z rysowaniem z pliku."];
+  Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="PzG::DopiszRysowanieZRoznych\lPunktow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_pz_g.html#a7227cb39c785b1c746b6bb5515c0b781",tooltip="Dodaje do listy rysowanych punktów, punkty o różnych rozmiarach."];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="PzG::WczytajListeRoznych\lPunktow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespace_pz_g.html#a169c311f0e0b6ffadcd44e91e749f72d",tooltip="Wczytuje z pliku listę punktów."];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="PzG::AtrybutyRysowania\l::ZmienKolor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_atrybuty_rysowania.html#ab068535b4d2f755c394557d1da72a4eb",tooltip="Zmienia kolor rysowania."];
+  Node17 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="PzG::AtrybutyRysowania\l::ZmienRozmiar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_atrybuty_rysowania.html#af4b140eb03bc10b6fd816fad63f8372e",tooltip="Zmienia rozmiar rysowania."];
+  Node17 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="PzG::AtrybutyRysowania\l::ZmienStyl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_atrybuty_rysowania.html#a2ac97706124b14072715ecf3f07e82b4",tooltip="Zmienia styl rysowania."];
+  Node1 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="dron::ustawparametry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#abf9d1bac7c5c7efc279bc4f526d42c2c",tooltip="Metoda klasy dron. | | Argumenty: | | polozenie2-aktualne przesuniecie | | kat aktualny kat | | przek..."];
+  Node1 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="dron::ustawpolozeniepoczatkowe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#a746f17ce078da9eb88560a29f2aa81a1",tooltip="Metoda klasy dron. | | Argumenty: | | polozeniepoczatkowe1-ustawaia polozenie poczatkowe | | przekazu..."];
+  Node22 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="prostopadloscian::ustawpolozeniepoczatkowe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a502ebfc48e00e2b59df35c554dc5f310",tooltip="Metoda klasy prostopadloscian. | | Argumenty:   | polozeniepoczatkowe aktualne polozenie poczatkowe |..."];
+  Node22 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="graniastoslup::ustawpolozeniepoczatkowe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#a0473898f23711cce194c07b9983bff48",tooltip="Metoda klasy graniastoslup. | | Argumenty:   | polozeniepoczatkowe aktualne polozenie poczatkowe | | ..."];
+  Node1 -> Node25 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="PzG::LaczeDoGNUPlota\l::UsunNazwePliku",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_lacze_do_g_n_u_plota.html#a7fa4e775e1aee74869fae174c567c2a6",tooltip="Usuwa z listy nazw plików z danymi do rysowania usuwa wybraną nazwę."];
+  Node25 -> Node26 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node26 [label="PzG::InfoPlikuDoRysowania\l::WezNazwePliku",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_pz_g_1_1_info_pliku_do_rysowania.html#a714aaa4c8e7bbd167ccbb1e797ca158c",tooltip="Udostępia nazwę pliku do rysowania."];
+}

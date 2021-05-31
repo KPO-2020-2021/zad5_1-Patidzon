@@ -1,0 +1,18 @@
+digraph "/home/patryk/Pulpit/zad5_1-Patidzon" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2de181082e5b6151c14bae435d740ddc {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_2de181082e5b6151c14bae435d740ddc.html"];
+    dir_2de181082e5b6151c14bae435d740ddc [shape=plaintext label="zad5_1-Patidzon"];
+    dir_1b90d8b0e97cb8dc95308b1a138b4d48 [shape=box label="app" color="black" fillcolor="white" style="filled" URL="dir_1b90d8b0e97cb8dc95308b1a138b4d48.html"];
+    dir_46182f0184a8c4173b650cd93dc55e35 [shape=box label="build" color="red" fillcolor="white" style="filled" URL="dir_46182f0184a8c4173b650cd93dc55e35.html"];
+    dir_0495da76ec1fee9fef2ff95a59255f2a [shape=box label="inc" color="black" fillcolor="white" style="filled" URL="dir_0495da76ec1fee9fef2ff95a59255f2a.html"];
+    dir_3458e748ec94d7f37c278818d4a3f35f [shape=box label="src" color="black" fillcolor="white" style="filled" URL="dir_3458e748ec94d7f37c278818d4a3f35f.html"];
+    dir_2a8d99e4a06abce104f92264149e7fbd [shape=box label="tests" color="red" fillcolor="white" style="filled" URL="dir_2a8d99e4a06abce104f92264149e7fbd.html"];
+  }
+  dir_2a8d99e4a06abce104f92264149e7fbd->dir_0495da76ec1fee9fef2ff95a59255f2a [headlabel="4", labeldistance=1.5 headhref="dir_000006_000024.html"];
+  dir_3458e748ec94d7f37c278818d4a3f35f->dir_0495da76ec1fee9fef2ff95a59255f2a [headlabel="2", labeldistance=1.5 headhref="dir_000034_000024.html"];
+  dir_1b90d8b0e97cb8dc95308b1a138b4d48->dir_46182f0184a8c4173b650cd93dc55e35 [headlabel="1", labeldistance=1.5 headhref="dir_000001_000002.html"];
+  dir_1b90d8b0e97cb8dc95308b1a138b4d48->dir_0495da76ec1fee9fef2ff95a59255f2a [headlabel="10", labeldistance=1.5 headhref="dir_000001_000024.html"];
+}

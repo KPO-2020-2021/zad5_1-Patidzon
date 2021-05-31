@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['platform_5fid_1956',['PLATFORM_ID',['../3_820_82_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCXXCompilerId.cpp'],['../3_820_83_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID():&#160;CMakeCXXCompilerId.cpp']]],
+  ['plik_5fkorpusu_5fdrona1_1957',['PLIK_KORPUSU_DRONA1',['../app_2main_8cpp.html#ab954ab5c53b1cd693c5bb1d24b25db4a',1,'main.cpp']]],
+  ['plik_5ftrasy_5fprzelotu_1958',['PLIK_TRASY_PRZELOTU',['../size_8h.html#a346a5da43df2b2a2038e95c893ccb129',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron1_5fkorpus_1959',['PLIK_WLASCIWY__DRON1_KORPUS',['../size_8h.html#a6e3c7e6d1a9951c3283dd637275d64e6',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron1_5frotor1_1960',['PLIK_WLASCIWY__DRON1_ROTOR1',['../size_8h.html#a006a9471b4119eb1bec2a292c4315acd',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron1_5frotor2_1961',['PLIK_WLASCIWY__DRON1_ROTOR2',['../size_8h.html#ac12a91e7d228562853617e2c0ea678d1',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron1_5frotor3_1962',['PLIK_WLASCIWY__DRON1_ROTOR3',['../size_8h.html#a103096588ce806b970bbc303169c3fde',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron1_5frotor4_1963',['PLIK_WLASCIWY__DRON1_ROTOR4',['../size_8h.html#a89ffdad9e2ea0df67866274330a10950',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron2_5fkorpus_1964',['PLIK_WLASCIWY__DRON2_KORPUS',['../size_8h.html#a1749db85ab4dbc2e3e1a2d1043e485d4',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron2_5frotor1_1965',['PLIK_WLASCIWY__DRON2_ROTOR1',['../size_8h.html#a2789441753973ed69ce77974996448ea',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron2_5frotor2_1966',['PLIK_WLASCIWY__DRON2_ROTOR2',['../size_8h.html#ada702919d023df75659eb3dd12475e29',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron2_5frotor3_1967',['PLIK_WLASCIWY__DRON2_ROTOR3',['../size_8h.html#afa470c314a09603afc6f998dc6b90723',1,'size.h']]],
+  ['plik_5fwlasciwy_5f_5fdron2_5frotor4_1968',['PLIK_WLASCIWY__DRON2_ROTOR4',['../size_8h.html#a951e695fd984f50d2a2429ffe8d17b50',1,'size.h']]],
+  ['plik_5fwzorcowego_5fgraniastoslupa6_1969',['PLIK_WZORCOWEGO_GRANIASTOSLUPA6',['../app_2main_8cpp.html#ac10437a5f7133af7fe8703e7e350105e',1,'main.cpp']]],
+  ['plik_5fwzorcowego_5fszescianu_1970',['PLIK_WZORCOWEGO_SZESCIANU',['../app_2main_8cpp.html#ab9d785760df7d38b8c4fe1d84f4d978d',1,'main.cpp']]],
+  ['project_5fversion_5fmajor_1971',['PROJECT_VERSION_MAJOR',['../example_config_8h.html#abecd2198575b690d25a741857f8390d1',1,'exampleConfig.h']]],
+  ['project_5fversion_5fminor_1972',['PROJECT_VERSION_MINOR',['../example_config_8h.html#a43e23009192a3e216fefec17750d8673',1,'exampleConfig.h']]],
+  ['project_5fversion_5fpatch_1973',['PROJECT_VERSION_PATCH',['../example_config_8h.html#a4a5fc96a4bdd7d68ed99ccce9ca2e77e',1,'exampleConfig.h']]],
+  ['project_5fversion_5ftweak_1974',['PROJECT_VERSION_TWEAK',['../example_config_8h.html#ab0dfcac449e8e1f19b730d5444105584',1,'exampleConfig.h']]]
+];

@@ -1,0 +1,18 @@
+digraph "prostopadloscian::przekazparametryprzesuniecia"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="prostopadloscian::przekazparametryprzesuniecia",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Metoda klasy prostopadloscian. | | Argumenty:   | polozenie1 aktualne przesuniecie od polozenia pocza..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dron::obrocdron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#aebf10ce4ba25127733c1cafee667c247",tooltip="Metoda klasy dron. | | przesuwa i obraca drona do nowych wspolrzednych drona |."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dron::animacjalotu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#a4fe83415726ebc798e1ac6b37341ec70",tooltip="Metoda klasy dron. | | animuje przelot drona dla gnuplota |."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$app_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dron::lotzwiadowczy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#a419e2f9d75926b103d7e0a6faff947f0",tooltip="Metoda klasy dron. Nie dziala | | animuje lot zwiadowczy drona |."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="dron::przesundron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdron.html#a412a29f8b5b44daa1e4ef7c0098c68b6",tooltip="Metoda klasy dron. | | przesuwa drona do nowych wspolrzednych drona |."];
+}

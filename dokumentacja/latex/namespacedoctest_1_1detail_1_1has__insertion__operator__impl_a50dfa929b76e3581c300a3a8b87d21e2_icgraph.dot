@@ -1,0 +1,12 @@
+digraph "doctest::detail::has_insertion_operator_impl::os"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="doctest::detail::has\l_insertion_operator_impl::os",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Matrix::Matrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_matrix.html#ae6fe3cad5aeeca2b21e15fe73c0a5a01",tooltip="konstruktor parametryczny macierzy | | Argumenty: | | kat - double, | os- char | | Wywoluje funkce za..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Matrix::zaladuj",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_matrix.html#a5d55d35300b64d62aa2965517c1b1df9",tooltip="metoda klasy macierz | | Argumenty: | | kat - double, | | Wywoluje funkce zaladuj(x,..."];
+}

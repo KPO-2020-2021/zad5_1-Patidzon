@@ -1,0 +1,24 @@
+digraph "dron::przesundron"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dron::przesundron",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Metoda klasy dron. | | przesuwa drona do nowych wspolrzednych drona |."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="graniastoslup::przekazparametryprzesuniecia",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#a8f396b7e3ad37585d4a4eb96903155eb",tooltip="Metoda klasy graniastoslup. | | Argumenty:   | polozenie1 aktualne przesuniecie od polozenia poczatko..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="prostopadloscian::przekazparametryprzesuniecia",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a64dbcbe94dccac1e633fa0ecb8ce8519",tooltip="Metoda klasy prostopadloscian. | | Argumenty:   | polozenie1 aktualne przesuniecie od polozenia pocza..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="prostopadloscian::Przesunwierzcholki",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a39c484125ad77b9b5eec74f762f759ed",tooltip="Metoda klasy prostopadloscian. | | Argumenty: brak | | | oblicza wspolrzedne wierzcholkow prostopadlo..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="graniastoslup::Przesunwierzcholki",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#ab51a853d7dc2df94a07eea6751c32b00",tooltip="Metoda klasy graniastoslup. | | Argumenty: brak | | | oblicza wspolrzedne wierzcholkow graniastoslupa..."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="graniastoslup::zaladujwspwzor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#ac7adc5dc81767fda1305fb682d689975",tooltip="Metoda klasy graniastoslup. | | Argumenty: | | Brak argumentow. | | Zwraca: | | Macierz wypelnione wa..."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="prostopadloscian::zaladujwspwzor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a2ff73ea0f6327e42d8dc270d0aeca4c6",tooltip="Metoda klasy prostopadloscian. | | Argumenty: | | Brak argumentow. | | Zwraca: | | tabele wypelnione ..."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="graniastoslup::zapiszwsp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgraniastoslup.html#aa82f5df4772ddc60865c16bebb6ab27f",tooltip="Metoda klasy graniastoslup. | | Argumenty: | | nazwaplikuzapisu-nazwa pliku do ktorej zostana zapisan..."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="prostopadloscian::zapiszwsp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classprostopadloscian.html#a9b0575cdcfc7129fe198d0989a70c38f",tooltip="Metoda klasy prostopadloscian. | | Argumenty: | | nazwaplikuzapisu-nazwa pliku do ktorej zostana zapi..."];
+}
