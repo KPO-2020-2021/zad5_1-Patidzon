@@ -8,7 +8,20 @@
 #include "prostopadloscian.h"
 #include "graniastoslup.h"
 #include "dron.h"
+/*!
+ * \file scena.h
+ * \brief  plik  zawiera  klase scena
+ *
+ */
 
+
+
+/*!
+ * \brief  
+ *  
+ *  klasa nie uzywana w projekcie
+ *  
+ */
 class scena
 {
 private:

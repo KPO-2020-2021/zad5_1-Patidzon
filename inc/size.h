@@ -10,6 +10,11 @@ constexpr double MINDIF =0.0000000001;
 #define PLIK_WLASCIWY__DRON1_ROTOR2  "../dat/PlikWlasciwy_Dron1_Rotor2.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR3  "../dat/PlikWlasciwy_Dron1_Rotor3.dat"
 #define PLIK_WLASCIWY__DRON1_ROTOR4  "../dat/PlikWlasciwy_Dron1_Rotor4.dat"
+#define PLIK_WLASCIWY__DRON2_KORPUS  "../dat/PlikWlasciwy_Dron2_Korpus.dat"
+#define PLIK_WLASCIWY__DRON2_ROTOR1  "../dat/PlikWlasciwy_Dron2_Rotor1.dat"
+#define PLIK_WLASCIWY__DRON2_ROTOR2  "../dat/PlikWlasciwy_Dron2_Rotor2.dat"
+#define PLIK_WLASCIWY__DRON2_ROTOR3  "../dat/PlikWlasciwy_Dron2_Rotor3.dat"
+#define PLIK_WLASCIWY__DRON2_ROTOR4  "../dat/PlikWlasciwy_Dron2_Rotor4.dat"
 #define PLIK_TRASY_PRZELOTU "../dat/trasa_przelotu.dat"
 /*
 #define TRANSLACJA_ROTOR_LEWY_PRZEDNI   5,4,5
@@ -17,6 +22,9 @@ constexpr double MINDIF =0.0000000001;
 #define TRANSLACJA_ROTOR_LEWY_TYLNY    -5,4,5
 #define TRANSLACJA_ROTOR_PRAWY_TYLNY   -5,-4,5  
 */
+int liczbawektorow=0;
+int calkowitaliczbawektorow=0;
+
     double argumentsV1[] = {5,4,5};
     double argumentsV2[] = {5,-4,5};
     double argumentsV3[] = {-5,4,5};
@@ -40,9 +48,13 @@ constexpr double MINDIF =0.0000000001;
      Vector<SIZE> V3=argumentsV9;
      
      Vector<SIZE> V5=argumentsV11;
-     const char *NazwyPlikowWlasciwychrotory[]= {  PLIK_WLASCIWY__DRON1_ROTOR1,
+     const char *NazwyPlikowWlasciwychrotory[][5]= {{  PLIK_WLASCIWY__DRON1_ROTOR1,
 					 PLIK_WLASCIWY__DRON1_ROTOR2, PLIK_WLASCIWY__DRON1_ROTOR3,
 					 PLIK_WLASCIWY__DRON1_ROTOR4, nullptr
-                                        };
-      const char *NazwyPlikowWlasciwychkorpusy[]= { PLIK_WLASCIWY__DRON1_KORPUS  , nullptr
-                                        };                                  
+                                        },{
+                                          PLIK_WLASCIWY__DRON2_ROTOR1,
+					 PLIK_WLASCIWY__DRON2_ROTOR2, PLIK_WLASCIWY__DRON2_ROTOR3,
+					 PLIK_WLASCIWY__DRON2_ROTOR4, nullptr
+                                        }};
+      const char *NazwyPlikowWlasciwychkorpusy[][2]= {{ PLIK_WLASCIWY__DRON1_KORPUS  , nullptr
+                                        },{PLIK_WLASCIWY__DRON2_KORPUS  , nullptr}};                                  

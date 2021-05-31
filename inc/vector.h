@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cmath>
 #include <size.h>
+
 /*!
  * \file vector.h
  * \brief Ten plik zawiera definicje szablonu Wektor<>
